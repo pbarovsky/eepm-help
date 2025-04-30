@@ -14,7 +14,7 @@
 
 Пример вызова `epm-help` в терминале:
 
-![epm-help preview](./image.png)
+![epm-help preview](./image1.png)
 
 ## Что делает скрипт
 
