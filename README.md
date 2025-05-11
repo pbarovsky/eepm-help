@@ -1,8 +1,8 @@
 # epm-help: справка по пакетному менеджеру EPM от Etersoft в терминале
 
 [**Etersoft** — официальный сайт](https://etersoft.ru/)  
-[**Данные взять** с wiki Etersoft](https://wiki.etersoft.ru/Epm)  
-[**Данные взять** с Alt Linux wiki](https://www.altlinux.org/Epm)
+[**Данные взяты** с wiki Etersoft](https://wiki.etersoft.ru/Epm)  
+[**Данные взяты** с Alt Linux wiki](https://www.altlinux.org/Epm)
 
 `epm` — имеющая одинаковый интерфейс на всех системах команда управления пакетами. При интерфейсе, похожем на rpm, apt и urpm, выполняет необходимые операции на любой платформе.
 
