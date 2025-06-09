@@ -4,9 +4,9 @@ ZSHRC="$HOME/.zshrc"
 BASHRC="$HOME/.bashrc"
 
 # Тело функции epm-help
-EPMA_HELP_FUNC=$(cat <<'EOF'
+EPM_HELP_FUNC=$(cat <<'EOF'
 # -------- Алиас для epm --------
-epm-help() {
+eepm-help() {
   echo
   echo -e "\033[1;33mepm - \033[1;37mПакетный менеджер Etersoft \033[0m"
   echo -e "\033[1;32mИспользование:\033[0m epm {команда} [аргументы]"
@@ -83,7 +83,7 @@ epm-help() {
   printf "└─────────────────────────────────┴─────────────────────────────────────────────────────┘\n"
   echo
 
-    ##########################
+  ##########################
   # 5. epm tool
   ##########################
 
@@ -144,11 +144,11 @@ add_to_file() {
   local file="$1"
 
   # Проверка, есть ли уже функция
-  if grep -q "epm-help()" "$file"; then
-    echo "[INFO] epm-help уже добавлен в $file"
+  if grep -q "eepm-help()" "$file"; then
+    echo "[INFO] eepm-help уже добавлен в $file"
   else
     echo -e "\n# Добавлено install_epm_aliases.sh" >> "$file"
-    echo "$EPMA_HELP_FUNC" >> "$file"
+    echo "$EPM_HELP_FUNC" >> "$file"
     echo "[OK] Добавлено в $file"
   fi
 }
@@ -158,6 +158,9 @@ add_to_file "$ZSHRC"
 add_to_file "$BASHRC"
 
 echo
-echo "Готово! Перезапусти терминал или выполни:"
+echo "[INFO] Перезапусти терминал или выполни:"
+echo "Если используешь zsh:"
 echo "source ~/.zshrc"
-
+echo "Если используешь bash:"
+echo "source ~/.bashrc"
+echo
