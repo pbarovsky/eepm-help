@@ -77,5 +77,5 @@ eepm-help
 > [!NOTE]
 > Скрипт работает в среде Linux с bash или zsh.
 
-> [!WARING]
+> [!WARNING]
 > Проверь, что у Вас установлен `epm`.
