@@ -28,11 +28,6 @@
 
 ![epm-help preview](./image.png)
 
-## Что делает скрипт
-
-- Автоматически добавляет функцию `eepm-help` в `~/.zshrc` и `~/.bashrc`
-- Проверяет, добавлены ли они уже, чтобы не дублировать
-
 ## Установка
 
 1. Склонируйте репозиторий:
@@ -57,6 +52,22 @@ sudo cp eepm-help.sh /usr/bin/eepm-help
 
 ```bash
 sudo chmod +x /usr/bin/eepm-help
+```
+
+5. Перезапусти терминал или выполни
+
+```bash
+# если используешь zsh
+source ~/.zshrc
+
+# если используешь bash
+source ~/.bashrc
+```
+
+6. Проверьте работу скрипта
+
+```bash
+eepm-help
 ```
 
 ## Установка (добавление в .zshrc и .bashrc)
@@ -88,7 +99,9 @@ chmod +x add_epm_alias.sh
 5. Перезапусти терминал или выполни
 
 ```bash
+# если используешь zsh
 source ~/.zshrc
+
 # если используешь bash
 source ~/.bashrc
 ```
