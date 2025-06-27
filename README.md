@@ -6,10 +6,6 @@
 
 `epm` — имеющая одинаковый интерфейс на всех системах команда управления пакетами. При интерфейсе, похожем на rpm, apt и urpm, выполняет необходимые операции на любой платформе.
 
-Этот репозиторий содержит скрипт `install_epm_aliases.sh`, который добавляет удобную справку в файл настроек вашей оболочки (`.zshrc` и `.bashrc`):
-
-- `eepm-help` — функция, выводящая справку по основным командам `epm`
-
 ## Что добавлено в справку
 
 - работа с системой
@@ -51,16 +47,42 @@ git clone https://github.com/pbarovsky/eepm-help.git
 cd eepm-help
 ```
 
+3. Скопируйте скрипт в `/usr/bin`
+
+```bash
+sudo cp eepm-help.sh /usr/bin/eepm-help
+```
+
+4. Сделайте скрипт исполняемым:
+
+```bash
+sudo chmod +x /usr/bin/eepm-help
+```
+
+## Установка (добавление в .zshrc и .bashrc)
+
+1. Склонируйте репозиторий:
+
+```bash
+git clone https://github.com/pbarovsky/eepm-help.git
+```
+
+2. Перейдите в директорию
+
+```bash
+cd eepm-help
+```
+
 3. Сделайте скрипт исполняемым:
 
 ```bash
-chmod +x install_epm_aliases.sh
+chmod +x add_epm_alias.sh
 ```
 
 4. Запустите скрипт
 
 ```bash
-./install_epm_aliases.sh
+./add_epm_alias.sh
 ```
 
 5. Перезапусти терминал или выполни
