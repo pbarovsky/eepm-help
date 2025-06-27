@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 eepm-help() {
   echo
   echo -e "\033[1;33mepm - \033[1;37mПакетный менеджер Etersoft \033[0m"
