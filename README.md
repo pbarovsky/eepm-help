@@ -17,6 +17,8 @@
 - управление источниками пакетов (`epm repo`)
 - работа с приложениями (`epm play`)
 - конвертирование пакетов (`epm repack`)
+- работа с рецептами (`epm prescriptions`)
+- вывод информации о пакетах и системе (`epm print`)
 - работа со встроенными инструментами (`epm tool`), в частности:
   - `ercat`
   - `eget`
@@ -26,7 +28,9 @@
 
 Пример вызова `eepm-help` в терминале:
 
-![epm-help preview](./image.png)
+![epm-help preview 1](./screenshots/1.png)
+
+![epm-help preview 2](./screenshots/2.png)
 
 ## Установка
 
@@ -70,52 +74,10 @@ source ~/.bashrc
 eepm-help
 ```
 
-## Установка (добавление в .zshrc и .bashrc)
-
-1. Склонируйте репозиторий:
-
-```bash
-git clone https://github.com/pbarovsky/eepm-help.git
-```
-
-2. Перейдите в директорию
-
-```bash
-cd eepm-help
-```
-
-3. Сделайте скрипт исполняемым:
-
-```bash
-chmod +x add_epm_alias.sh
-```
-
-4. Запустите скрипт
-
-```bash
-./add_epm_alias.sh
-```
-
-5. Перезапусти терминал или выполни
-
-```bash
-# если используешь zsh
-source ~/.zshrc
-
-# если используешь bash
-source ~/.bashrc
-```
-
-6. Проверьте работу скрипта
-
-```bash
-eepm-help
-```
-
 ---
 
 > [!NOTE]
-> Скрипт работает в среде Linux с bash или zsh.
+> Скрипт работает в среде Linux с bash и zsh.
 
 > [!WARNING]
 > Проверь, что у Вас установлен `epm`.
