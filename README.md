@@ -8,6 +8,7 @@
 
 ## Что добавлено в справку
 
+- параметры команд epm
 - работа с системой
 - работа с пакетами
 - просмотр состояния пакетов (`epm status`)
@@ -23,6 +24,9 @@
   - `ercat`
   - `eget`
   - `erc`
+
+> [!NOTE]
+> Вызов утилиты коротким именем `eepmh` для удобства и скорости набора.
 
 ## Как это выглядит
 
@@ -46,19 +50,13 @@ git clone https://github.com/pbarovsky/eepm-help.git
 cd eepm-help
 ```
 
-3. Скопируйте скрипт в `/usr/bin`
+3. Выполните команду по установке
 
 ```bash
-sudo cp eepm-help.sh /usr/bin/eepm-help
+sudo chmod +x install.sh && ./install.sh
 ```
 
-4. Сделайте скрипт исполняемым:
-
-```bash
-sudo chmod +x /usr/bin/eepm-help
-```
-
-5. Перезапусти терминал или выполни
+4. Перезапусти терминал или выполни
 
 ```bash
 # если используешь zsh
@@ -68,10 +66,18 @@ source ~/.zshrc
 source ~/.bashrc
 ```
 
-6. Проверьте работу скрипта
+## Удаление
+
+1. Перейдите в директорию
 
 ```bash
-eepm-help
+cd eepm-help
+```
+
+2. Выполните команду по удалению
+
+```bash
+sudo chmod +x uninstall.sh && ./uninstall.sh
 ```
 
 ---
