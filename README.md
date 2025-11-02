@@ -1,4 +1,4 @@
-# eepm-help: справка по пакетному менеджеру EPM от Etersoft в терминале
+(# eepm-help: справка по пакетному менеджеру EPM от Etersoft в терминале
 
 [**Etersoft** — официальный сайт](https://etersoft.ru/)  
 [**Данные взяты** с wiki Etersoft](https://wiki.etersoft.ru/Epm)  
@@ -74,7 +74,7 @@ source ~/.bashrc
 cd eepm-help
 ```
 
-2. Выполните команду по удалению
+2. Выполните команду для удаления
 
 ```bash
 sudo chmod +x uninstall.sh && ./uninstall.sh
